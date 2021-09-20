@@ -112,7 +112,7 @@ p {
   background-color: var(--color-black);
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 4px;
 }
 
 .navbar__menu {
@@ -130,10 +130,11 @@ p {
   height: 40px;
   width: 40px;
   margin: 8px;
+  padding: 2px;
 }
 
 .navbar__menu__item {
-  padding: 8px 12px;
+  padding: 4px 12px;
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size--border-radius);
@@ -160,7 +161,7 @@ p {
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
-  margin: 25px;
+  margin: 15px;
 }
 
 .home__title,
@@ -182,6 +183,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__ container {
   max-width: 1200px;
   margin: auto;
 }
@@ -253,4 +258,59 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+/*Skill*/
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-blue);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
