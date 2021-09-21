@@ -466,6 +466,11 @@ p {
   color: var(--color-black);
 }
 
+.testimonial__speech-bubble a:hover {
+  color: var(--color-pink);
+  transition: all var(--animation-duration) ease-in;
+}
+
 /*Contact*/
 #contact {
   background-color: var(--color-black);
