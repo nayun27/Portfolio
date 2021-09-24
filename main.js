@@ -119,7 +119,7 @@ const sectionIds = ['#home', '#about', '#skills', '#work', '#testimonials', '#co
 const sections = sectionIds.map(id => document.querySelector(id));
 const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
 
-let selectedNavIndex = getIdxOfSectionOnViewPort();
+let selectedNavIndex = 0;
 let selectedNavItem = navItems[selectedNavIndex];
 function selectNavItem(selected) {
     selectedNavItem.classList.remove('active');
@@ -130,7 +130,7 @@ function selectNavItem(selected) {
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
-    selectedNavItem(navItems[sectionIds.indexOf(selector)]);
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
 };
 
 const observerOptions = {
